@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Products - Medivive</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -12,59 +13,65 @@
         <nav>
             <a href="index.html">Home</a>
             <a href="products.html">Products</a>
+            <a href="cart.html">Cart</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
 
     <section class="products">
         <div class="product">
-            <img src="images/IMG_1342.jpg" alt="Paracetamol">
+            <img src="images/paracetamol.jpg" alt="Paracetamol">
             <h3>Paracetamol</h3>
             <p>Price: $5</p>
             <p>Relieves pain and fever.</p>
+            <button onclick="addToCart('Paracetamol', 5)">Add to Cart</button>
         </div>
         <div class="product">
-            <img src="images/IMG_1343.jpg" alt="Ibuprofen">
+            <img src="images/ibuprofen.jpg" alt="Ibuprofen">
             <h3>Ibuprofen</h3>
             <p>Price: $7</p>
             <p>Anti-inflammatory and pain relief.</p>
+            <button onclick="addToCart('Ibuprofen', 7)">Add to Cart</button>
         </div>
         <div class="product">
-            <img src="images/IMG_1344.jpg" alt="Aspirin">
+            <img src="images/aspirin.jpg" alt="Aspirin">
             <h3>Aspirin</h3>
             <p>Price: $4</p>
             <p>Reduces pain, fever, and inflammation.</p>
+            <button onclick="addToCart('Aspirin', 4)">Add to Cart</button>
         </div>
-        <!-- Repeat for the remaining products -->
         <div class="product">
             <img src="images/amoxicillin.jpg" alt="Amoxicillin">
             <h3>Amoxicillin</h3>
             <p>Price: $15</p>
             <p>Antibiotic for bacterial infections.</p>
+            <button onclick="addToCart('Amoxicillin', 15)">Add to Cart</button>
         </div>
         <div class="product">
             <img src="images/vitamin-c.jpg" alt="Vitamin C">
             <h3>Vitamin C</h3>
             <p>Price: $8</p>
             <p>Boosts immunity and promotes health.</p>
+            <button onclick="addToCart('Vitamin C', 8)">Add to Cart</button>
         </div>
         <div class="product">
             <img src="images/loratadine.jpg" alt="Loratadine">
             <h3>Loratadine</h3>
             <p>Price: $6</p>
             <p>Antihistamine for allergy relief.</p>
+            <button onclick="addToCart('Loratadine', 6)">Add to Cart</button>
         </div>
-        <!-- Add image tags for all remaining products -->
         <div class="product">
-            <img src="images/allopurinol.jpg" alt="Allopurinol">
-            <h3>Allopurinol</h3>
-            <p>Price: $14</p>
-            <p>Treats gout and kidney stones.</p>
+            <img src="images/metformin.jpg" alt="Metformin">
+            <h3>Metformin</h3>
+            <p>Price: $12</p>
+            <p>Controls blood sugar levels.</p>
+            <button onclick="addToCart('Metformin', 12)">Add to Cart</button>
         </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Medivive - Your Trusted Medicine Store</p>
-    </footer>
-</body>
-</html>
+        <div class="product">
+            <img src="images/omeprazole.jpg" alt="Omeprazole">
+            <h3>Omeprazole</h3>
+            <p>Price: $10</p>
+            <p>Treats acid reflux and heartburn.</p>
+            <button onclick="addToCart('Omeprazole', 10)">Add to Cart</button>
+        </div>
