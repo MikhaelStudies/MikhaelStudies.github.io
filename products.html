@@ -1,116 +1,124 @@
-<!-- Product 1 -->
-<div class="product">
-    <img src="images/paracetamol.jpg" alt="Paracetamol">
-    <h3>Paracetamol</h3>
-    <p>Price: $5</p>
-    <p>Relieves pain and fever.</p>
-    <div class="quantity-control">
-        <button class="quantity-btn" onclick="updateQuantity('Paracetamol', 5, 'decrease')">-</button>
-        <span id="quantity-Paracetamol">0</span>
-        <button class="quantity-btn" onclick="updateQuantity('Paracetamol', 5, 'increase')">+</button>
-    </div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medivive - Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Medivive - Updated Products</h1>
+    <div class="products-container">
 
-<!-- Product 2 -->
-<div class="product">
-    <img src="images/ibuprofen.jpg" alt="Ibuprofen">
-    <h3>Ibuprofen</h3>
-    <p>Price: $8</p>
-    <p>Reduces inflammation and pain.</p>
-    <div class="quantity-control">
-        <button class="quantity-btn" onclick="updateQuantity('Ibuprofen', 8, 'decrease')">-</button>
-        <span id="quantity-Ibuprofen">0</span>
-        <button class="quantity-btn" onclick="updateQuantity('Ibuprofen', 8, 'increase')">+</button>
-    </div>
-</div>
+        <!-- Product 1 -->
+        <div class="product">
+            <img src="images/paracetamol.jpg" alt="Paracetamol">
+            <h3>Paracetamol</h3>
+            <p>Price: $5</p>
+            <p>Relieves pain and fever.</p>
+            <div class="quantity-control">
+                <button class="quantity-btn" onclick="updateQuantity('Paracetamol', 5, 'decrease')">-</button>
+                <span id="quantity-Paracetamol">0</span>
+                <button class="quantity-btn" onclick="updateQuantity('Paracetamol', 5, 'increase')">+</button>
+            </div>
+        </div>
 
-<!-- Product 3 -->
-<div class="product">
-    <img src="images/amoxicillin.jpg" alt="Amoxicillin">
-    <h3>Amoxicillin</h3>
-    <p>Price: $12</p>
-    <p>Antibiotic for bacterial infections.</p>
-    <div class="quantity-control">
-        <button class="quantity-btn" onclick="updateQuantity('Amoxicillin', 12, 'decrease')">-</button>
-        <span id="quantity-Amoxicillin">0</span>
-        <button class="quantity-btn" onclick="updateQuantity('Amoxicillin', 12, 'increase')">+</button>
-    </div>
-</div>
+        <!-- Product 2 -->
+        <div class="product">
+            <img src="images/ibuprofen.jpg" alt="Ibuprofen">
+            <h3>Ibuprofen</h3>
+            <p>Price: $8</p>
+            <p>Reduces inflammation and pain.</p>
+            <div class="quantity-control">
+                <button class="quantity-btn" onclick="updateQuantity('Ibuprofen', 8, 'decrease')">-</button>
+                <span id="quantity-Ibuprofen">0</span>
+                <button class="quantity-btn" onclick="updateQuantity('Ibuprofen', 8, 'increase')">+</button>
+            </div>
+        </div>
 
-<!-- Product 4 -->
-<div class="product">
-    <img src="images/aspirin.jpg" alt="Aspirin">
-    <h3>Aspirin</h3>
-    <p>Price: $7</p>
-    <p>Pain relief and anti-inflammatory.</p>
-    <div class="quantity-control">
-        <button class="quantity-btn" onclick="updateQuantity('Aspirin', 7, 'decrease')">-</button>
-        <span id="quantity-Aspirin">0</span>
-        <button class="quantity-btn" onclick="updateQuantity('Aspirin', 7, 'increase')">+</button>
-    </div>
-</div>
+        <!-- Product 3 -->
+        <div class="product">
+            <img src="images/amoxicillin.jpg" alt="Amoxicillin">
+            <h3>Amoxicillin</h3>
+            <p>Price: $12</p>
+            <p>Antibiotic for bacterial infections.</p>
+            <div class="quantity-control">
+                <button class="quantity-btn" onclick="updateQuantity('Amoxicillin', 12, 'decrease')">-</button>
+                <span id="quantity-Amoxicillin">0</span>
+                <button class="quantity-btn" onclick="updateQuantity('Amoxicillin', 12, 'increase')">+</button>
+            </div>
+        </div>
 
-<!-- Product 5 -->
-<div class="product">
-    <img src="images/acetaminophen.jpg" alt="Acetaminophen">
-    <h3>Acetaminophen</h3>
-    <p>Price: $6</p>
-    <p>Reduces pain and fever.</p>
-    <div class="quantity-control">
-        <button class="quantity-btn" onclick="updateQuantity('Acetaminophen', 6, 'decrease')">-</button>
-        <span id="quantity-Acetaminophen">0</span>
-        <button class="quantity-btn" onclick="updateQuantity('Acetaminophen', 6, 'increase')">+</button>
-    </div>
-</div>
+        <!-- Product 4 -->
+        <div class="product">
+            <img src="images/aspirin.jpg" alt="Aspirin">
+            <h3>Aspirin</h3>
+            <p>Price: $7</p>
+            <p>Pain relief and anti-inflammatory.</p>
+            <div class="quantity-control">
+                <button class="quantity-btn" onclick="updateQuantity('Aspirin', 7, 'decrease')">-</button>
+                <span id="quantity-Aspirin">0</span>
+                <button class="quantity-btn" onclick="updateQuantity('Aspirin', 7, 'increase')">+</button>
+            </div>
+        </div>
 
-<!-- Product 6 -->
-<div class="product">
-    <img src="images/lisinopril.jpg" alt="Lisinopril">
-    <h3>Lisinopril</h3>
-    <p>Price: $15</p>
-    <p>For high blood pressure treatment.</p>
-    <div class="quantity-control">
-        <button class="quantity-btn" onclick="updateQuantity('Lisinopril', 15, 'decrease')">-</button>
-        <span id="quantity-Lisinopril">0</span>
-        <button class="quantity-btn" onclick="updateQuantity('Lisinopril', 15, 'increase')">+</button>
-    </div>
-</div>
+        <!-- Product 5 -->
+        <div class="product">
+            <img src="images/acetaminophen.jpg" alt="Acetaminophen">
+            <h3>Acetaminophen</h3>
+            <p>Price: $6</p>
+            <p>Reduces pain and fever.</p>
+            <div class="quantity-control">
+                <button class="quantity-btn" onclick="updateQuantity('Acetaminophen', 6, 'decrease')">-</button>
+                <span id="quantity-Acetaminophen">0</span>
+                <button class="quantity-btn" onclick="updateQuantity('Acetaminophen', 6, 'increase')">+</button>
+            </div>
+        </div>
 
-<!-- Product 7 -->
-<div class="product">
-    <img src="images/atorvastatin.jpg" alt="Atorvastatin">
-    <h3>Atorvastatin</h3>
-    <p>Price: $20</p>
-    <p>Lowers cholesterol levels.</p>
-    <div class="quantity-control">
-        <button class="quantity-btn" onclick="updateQuantity('Atorvastatin', 20, 'decrease')">-</button>
-        <span id="quantity-Atorvastatin">0</span>
-        <button class="quantity-btn" onclick="updateQuantity('Atorvastatin', 20, 'increase')">+</button>
-    </div>
-</div>
+        <!-- Product 6 -->
+        <div class="product">
+            <img src="images/lisinopril.jpg" alt="Lisinopril">
+            <h3>Lisinopril</h3>
+            <p>Price: $15</p>
+            <p>For high blood pressure treatment.</p>
+            <div class="quantity-control">
+                <button class="quantity-btn" onclick="updateQuantity('Lisinopril', 15, 'decrease')">-</button>
+                <span id="quantity-Lisinopril">0</span>
+                <button class="quantity-btn" onclick="updateQuantity('Lisinopril', 15, 'increase')">+</button>
+            </div>
+        </div>
 
-<!-- Product 8 -->
-<div class="product">
-    <img src="images/metformin.jpg" alt="Metformin">
-    <h3>Metformin</h3>
-    <p>Price: $10</p>
-    <p>Used to treat type 2 diabetes.</p>
-    <div class="quantity-control">
-        <button class="quantity-btn" onclick="updateQuantity('Metformin', 10, 'decrease')">-</button>
-        <span id="quantity-Metformin">0</span>
-        <button class="quantity-btn" onclick="updateQuantity('Metformin', 10, 'increase')">+</button>
-    </div>
-</div>
+        <!-- Product 7 -->
+        <div class="product">
+            <img src="images/atorvastatin.jpg" alt="Atorvastatin">
+            <h3>Atorvastatin</h3>
+            <p>Price: $20</p>
+            <p>Lowers cholesterol levels.</p>
+            <div class="quantity-control">
+                <button class="quantity-btn" onclick="updateQuantity('Atorvastatin', 20, 'decrease')">-</button>
+                <span id="quantity-Atorvastatin">0</span>
+                <button class="quantity-btn" onclick="updateQuantity('Atorvastatin', 20, 'increase')">+</button>
+            </div>
+        </div>
 
-<!-- Product 9 -->
-<div class="product">
-    <img src="images/simvastatin.jpg" alt="Simvastatin">
-    <h3>Simvastatin</h3>
-    <p>Price: $18</p>
-    <p>Lowers cholesterol and triglycerides.</p>
-    <div class="quantity-control">
-        <button class="quantity-btn" onclick="updateQuantity('Simvastatin', 18, 'decrease')">-</button>
-        <span id="quantity-Simvastatin">0</span>
-        <button class="quantity-btn" onclick="updateQuantity('Simvastatin', 18, 'increase')">+</button>
-    </div>
-</div>
+        <!-- Product 8 -->
+        <div class="product">
+            <img src="images/metformin.jpg" alt="Metformin">
+            <h3>Metformin</h3>
+            <p>Price: $10</p>
+            <p>Used to treat type 2 diabetes.</p>
+            <div class="quantity-control">
+                <button class="quantity-btn" onclick="updateQuantity('Metformin', 10, 'decrease')">-</button>
+                <span id="quantity-Metformin">0</span>
+                <button class="quantity-btn" onclick="updateQuantity('Metformin', 10, 'increase')">+</button>
+            </div>
+        </div>
+
+        <!-- Product 9 -->
+        <div class="product">
+            <img src="images/simvastatin.jpg" alt="Simvastatin">
+            <h3>Simvastatin</h3>
+            <p>Price: $18</p>
+            <p>Lowers cholesterol and triglycerides.</p>
+            <div class="quantity-control">
+                <button class="quantity-btn" onclick="updateQuantity('Simvastatin', 18, 'decrease')">-
