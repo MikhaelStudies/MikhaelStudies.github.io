@@ -3,32 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Cart - Medivive</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <title>Medivive - Your Cart</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Your Cart</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="products.html">Products</a>
-            <a href="cart.html">Cart</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-
-    <section class="cart">
-        <h2>Items in Your Cart</h2>
-        <ul id="cart-items">
-            <!-- Items will be dynamically added here -->
-        </ul>
-        <p id="total-price">Total: $0</p>
-        <button onclick="checkout()">Checkout</button>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Medivive - Your Trusted Medicine Store</p>
-    </footer>
+    <h1>Your Cart</h1>
+    <ul id="cart-items"></ul>
+    <p id="total-price">Total: $0</p>
+    <button class="cart-button" onclick="checkout()">Proceed to Checkout</button>
+    <script src="script.js"></script>
 </body>
 </html>
